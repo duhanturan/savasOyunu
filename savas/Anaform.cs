@@ -1,20 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using savas.library.Concrete;
+using savas.library.Enum;
 using System.Windows.Forms;
 
 namespace savas
 {
 	public partial class Anaform : Form
 	{
+		public Oyun _oyun = new Oyun();
 		public Anaform()
 		{
 			InitializeComponent();
+		}
+
+		private void Anaform_KeyDown(object sender, KeyEventArgs e)
+		{
+			switch (e.KeyCode)
+			{
+				case Keys.Enter:
+					_oyun.Baslat();
+					break;
+				case Keys.Space:
+					_oyun.AtesEt();
+					break;
+				case Keys.Left:
+					_oyun.UcakSavarHareketEttir(Yon.Sola);
+					break;
+				case Keys.Right:
+					_oyun.UcakSavarHareketEttir(Yon.Saga);
+					break;
+			}
 		}
 	}
 }

@@ -102,6 +102,7 @@
 			this.Name = "Anaform";
 			this.Text = "Savaş Oyunu";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Anaform_KeyDown);
 			this.bilgiAlaniPanel.ResumeLayout(false);
 			this.bilgiAlaniPanel.PerformLayout();
 			this.ResumeLayout(false);

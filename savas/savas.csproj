@@ -85,5 +85,11 @@
   <ItemGroup>
     <Content Include="transportation_transport_travel_flight_airplane_plane_icon_225010.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\savas.library\savas.library.csproj">
+      <Project>{87f8bc3b-860f-4787-97df-21e86cf17a87}</Project>
+      <Name>savas.library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
