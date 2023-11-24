@@ -9,6 +9,7 @@ namespace savas.library.Interface
 {
 	public interface IOyun
 	{
+		event EventHandler GecenSureDegisti;
 		bool DevamEdiyorMu {  get; }
 		TimeSpan GecenSure { get; }
 

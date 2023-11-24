@@ -1,5 +1,6 @@
 ﻿using savas.library.Concrete;
 using savas.library.Enum;
+using System;
 using System.Windows.Forms;
 
 namespace savas
@@ -10,6 +11,7 @@ namespace savas
 		public Anaform()
 		{
 			InitializeComponent();
+			_oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
 		}
 
 		private void Anaform_KeyDown(object sender, KeyEventArgs e)
@@ -30,5 +32,11 @@ namespace savas
 					break;
 			}
 		}
+
+		private void Oyun_GecenSureDegisti(object sender, EventArgs e)
+		{
+			
+		}
+
 	}
 }
