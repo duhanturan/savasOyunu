@@ -2,6 +2,7 @@
 using savas.library.Interface;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace savas.library.Concrete
 		#region Alanlar
 		private Timer _gecenSureTimer = new Timer { Interval = 1000 };
 		private TimeSpan _gecenSure;
+		private readonly Panel _ucaksavarPanel;
 		#endregion
 
 		#region Olaylar
@@ -36,8 +38,9 @@ namespace savas.library.Concrete
 		#endregion
 
 		#region Metotlar
-		public Oyun()
+		public Oyun(Panel ucaksavarPanel)
         {
+			_ucaksavarPanel = ucaksavarPanel;
 			_gecenSureTimer.Tick += GecenSureTimer_Tick;
         }
         private void GecenSureTimer_Tick(object sender, EventArgs e)
@@ -54,7 +57,20 @@ namespace savas.library.Concrete
 			if (DevamEdiyorMu) return;
 			DevamEdiyorMu = true;
 			_gecenSureTimer.Start();
-        }
+
+			UcakSavarOlustur();
+			
+		}
+
+		private void UcakSavarOlustur()
+		{
+			var ucakSavar = new UcakSavar(_ucaksavarPanel.Width)
+			{
+				Image = Image.FromFile(@"Gorseller\ucaksavar.png")
+			};
+			_ucaksavarPanel.Controls.Add(ucakSavar);	
+			
+		}
 
 		private void Bitir()
 		{

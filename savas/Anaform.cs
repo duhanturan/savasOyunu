@@ -7,10 +7,12 @@ namespace savas
 {
 	public partial class Anaform : Form
 	{
-		public Oyun _oyun = new Oyun();
+		public Oyun _oyun ;
 		public Anaform()
 		{
 			InitializeComponent();
+
+			_oyun = new Oyun(ucaksavarPanel);
 			_oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
 		}
 
@@ -35,7 +37,7 @@ namespace savas
 
 		private void Oyun_GecenSureDegisti(object sender, EventArgs e)
 		{
-			
+			label2.Text = _oyun.GecenSure.ToString(@"m\:ss");
 		}
 
 	}

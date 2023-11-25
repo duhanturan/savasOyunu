@@ -30,10 +30,10 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anaform));
 			this.bilgiAlaniPanel = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
+			this.bilgiLabel = new System.Windows.Forms.Label();
 			this.ucaksavarPanel = new System.Windows.Forms.Panel();
 			this.sureLabel = new System.Windows.Forms.Panel();
-			this.bilgiLabel = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
 			this.bilgiAlaniPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -47,6 +47,30 @@
 			this.bilgiAlaniPanel.Name = "bilgiAlaniPanel";
 			this.bilgiAlaniPanel.Size = new System.Drawing.Size(1203, 115);
 			this.bilgiAlaniPanel.TabIndex = 0;
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.White;
+			this.label2.Location = new System.Drawing.Point(963, 20);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(217, 66);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "0:00";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// bilgiLabel
+			// 
+			this.bilgiLabel.AutoSize = true;
+			this.bilgiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.bilgiLabel.ForeColor = System.Drawing.Color.White;
+			this.bilgiLabel.Location = new System.Drawing.Point(12, 9);
+			this.bilgiLabel.Name = "bilgiLabel";
+			this.bilgiLabel.Size = new System.Drawing.Size(743, 93);
+			this.bilgiLabel.TabIndex = 0;
+			this.bilgiLabel.Text = "Oyunu başlatmak için ENTER tuşuna basınız.\r\nUçaksavarı hareket ettirmek için Sağ/" +
+    "Sol yön tuşlarına basın.\r\nAteş etmek için BOŞLUK tuşuna basın.\r\n";
 			// 
 			// ucaksavarPanel
 			// 
@@ -65,30 +89,6 @@
 			this.sureLabel.Name = "sureLabel";
 			this.sureLabel.Size = new System.Drawing.Size(1203, 563);
 			this.sureLabel.TabIndex = 2;
-			// 
-			// bilgiLabel
-			// 
-			this.bilgiLabel.AutoSize = true;
-			this.bilgiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.bilgiLabel.ForeColor = System.Drawing.Color.White;
-			this.bilgiLabel.Location = new System.Drawing.Point(12, 9);
-			this.bilgiLabel.Name = "bilgiLabel";
-			this.bilgiLabel.Size = new System.Drawing.Size(743, 93);
-			this.bilgiLabel.TabIndex = 0;
-			this.bilgiLabel.Text = "Oyunu başlatmak için ENTER tuşuna basınız.\r\nUçaksavarı hareket ettirmek için Sağ/" +
-    "Sol yön tuşlarına basın.\r\nAteş etmek için BOŞLUK tuşuna basın.\r\n";
-			// 
-			// label2
-			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(963, 20);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(217, 66);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "0:00";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// Anaform
 			// 
